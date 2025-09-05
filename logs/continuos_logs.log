@@ -224,3 +224,109 @@ TypeError: makedirs() got an unexpected keyword argument 'exits_ok'
 [2025-09-05 20:33:08,425: INFO: common: created directory at: artifacts/data_ingestion]
 [2025-09-05 20:33:08,425: INFO: data_ingestion: File already exist]
 [2025-09-05 20:33:08,615: INFO: main: Data Ingestion Stage completed]
+[2025-09-05 23:07:56,819: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:08:30,510: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:08:30,512: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 23:08:30,514: INFO: common: created directory at: artifacts]
+[2025-09-05 23:26:00,884: INFO: main: Data Ingestion Stage started]
+[2025-09-05 23:26:00,887: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:26:00,889: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 23:26:00,889: INFO: common: created directory at: artifacts]
+[2025-09-05 23:26:00,890: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 23:26:00,890: INFO: data_ingestion: File already exist]
+[2025-09-05 23:26:01,180: INFO: main: Data Ingestion Stage completed]
+[2025-09-05 23:26:01,181: INFO: main: Data Transformation Stage started]
+[2025-09-05 23:26:01,183: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:26:01,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 23:26:01,185: INFO: common: created directory at: artifacts]
+[2025-09-05 23:26:01,186: ERROR: main: "'ConfigBox' object has no attribute 'root_dir'"]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'root_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'root_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 23, in <module>
+    data_ingestion_pipeline.initiate_data_transformation()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_transformation_pipeline.py", line 11, in initiate_data_transformation
+    data_transformation_config = config.get_data_transformation_config()
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 31, in get_data_transformation_config
+    creating_directories([self.config.root_dir])
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root_dir'"
+[2025-09-05 23:32:18,515: INFO: main: Data Ingestion Stage started]
+[2025-09-05 23:32:18,518: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:32:18,519: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 23:32:18,520: INFO: common: created directory at: artifacts]
+[2025-09-05 23:32:18,521: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 23:32:18,521: INFO: data_ingestion: File already exist]
+[2025-09-05 23:32:18,787: INFO: main: Data Ingestion Stage completed]
+[2025-09-05 23:32:18,788: INFO: main: Data Transformation Stage started]
+[2025-09-05 23:32:18,791: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 23:32:18,792: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 23:32:18,793: INFO: common: created directory at: artifacts]
+[2025-09-05 23:32:18,794: INFO: common: created directory at: artifacts/data_transformation]
+[2025-09-05 23:32:30,317: INFO: main: Data Transformation Stage completed]

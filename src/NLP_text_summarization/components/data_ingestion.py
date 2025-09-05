@@ -20,6 +20,7 @@ class DataIngestion:
         else:
             logger.info(f"File already exist")
 
+
     def extract_zip_file(self):
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
