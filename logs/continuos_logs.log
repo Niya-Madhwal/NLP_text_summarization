@@ -1,0 +1,226 @@
+[2025-09-05 14:40:59,113: INFO: main: Loggign is implemented]
+[2025-09-05 19:50:17,184: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 19:50:17,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:17:18,232: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:17:18,235: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:17:18,237: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:17:18,238: ERROR: main: expected str, bytes or os.PathLike object, not list]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 9, in initiate_data_ingestion
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 12, in __init__
+    creating_directories([self.config.artifacts_root])
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\utils\common.py", line 27, in creating_directories
+    os.makedirs(path_to_directory, exist_ok=True)
+  File "<frozen os>", line 210, in makedirs
+  File "<frozen ntpath>", line 211, in split
+TypeError: expected str, bytes or os.PathLike object, not list
+[2025-09-05 20:19:07,617: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:19:07,619: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:19:07,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:19:07,620: ERROR: main: Argument path_to_directory of type <class 'str'> to <function creating_directories at 0x000002DB6100F1A0> does not match annotation type <class 'list'>]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 9, in initiate_data_ingestion
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 12, in __init__
+    creating_directories(self.config.artifacts_root)
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\ensure\main.py", line 803, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_directory of type <class 'str'> to <function creating_directories at 0x000002DB6100F1A0> does not match annotation type <class 'list'>
+[2025-09-05 20:25:59,241: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:25:59,243: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:25:59,244: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:25:59,245: ERROR: main: Argument path_to_directory of type <class 'str'> to <function creating_directories at 0x0000028CD6766E80> does not match annotation type <class 'list'>]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 9, in initiate_data_ingestion
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 12, in __init__
+    creating_directories(self.config.artifacts_root)
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\ensure\main.py", line 803, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_directory of type <class 'str'> to <function creating_directories at 0x0000028CD6766E80> does not match annotation type <class 'list'>
+[2025-09-05 20:27:04,102: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:27:04,104: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:27:04,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:27:04,105: ERROR: main: expected str, bytes or os.PathLike object, not list]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 9, in initiate_data_ingestion
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 12, in __init__
+    creating_directories([self.config.artifacts_root])
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\utils\common.py", line 27, in creating_directories
+    os.makedirs(path_to_directory, exist_ok=True)
+  File "<frozen os>", line 210, in makedirs
+  File "<frozen ntpath>", line 211, in split
+TypeError: expected str, bytes or os.PathLike object, not list
+[2025-09-05 20:28:47,285: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:28:47,288: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:28:47,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:28:47,291: INFO: common: created directory at: artifacts]
+[2025-09-05 20:28:47,292: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:28:47,294: ERROR: main: "'ConfigBox' object has no attribute 'unzip'"]
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'unzip'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'unzip'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'unzip'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'unzip'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'unzip'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'unzip'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 10, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 22, in get_data_ingestion_config
+    unzip = config.unzip
+            ^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip'"
+[2025-09-05 20:29:56,204: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:29:56,206: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:29:56,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:29:56,208: INFO: common: created directory at: artifacts]
+[2025-09-05 20:29:56,208: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:30:00,952: INFO: data_ingestion: File adownloaded]
+[2025-09-05 20:30:00,982: ERROR: main: 'DataIngestionConfig' object has no attribute 'unzip_dir']
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\components\data_ingestion.py", line 24, in extract_zip_file
+    unzip_path = self.config.unzip_dir
+                 ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionConfig' object has no attribute 'unzip_dir'
+[2025-09-05 20:30:45,246: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:30:45,249: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:30:45,251: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:30:45,253: INFO: common: created directory at: artifacts]
+[2025-09-05 20:30:45,255: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:30:45,256: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'unzip']
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 10, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 18, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'unzip'
+[2025-09-05 20:30:57,059: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:30:57,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:30:57,067: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:30:57,070: INFO: common: created directory at: artifacts]
+[2025-09-05 20:30:57,071: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:30:57,072: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'unzip']
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 10, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\config\configuration.py", line 18, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'unzip'
+[2025-09-05 20:31:30,156: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:31:30,173: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:31:30,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:31:30,199: INFO: common: created directory at: artifacts]
+[2025-09-05 20:31:30,201: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:31:30,202: INFO: data_ingestion: File already exist]
+[2025-09-05 20:31:30,202: ERROR: main: makedirs() got an unexpected keyword argument 'exits_ok']
+Traceback (most recent call last):
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\neha.mandwal\.vscode\Project\MLOps\NLP_text_summarization\src\NLP_text_summarization\components\data_ingestion.py", line 25, in extract_zip_file
+    os.makedirs(unzip_path, exits_ok=True)
+TypeError: makedirs() got an unexpected keyword argument 'exits_ok'
+[2025-09-05 20:33:08,421: INFO: main: Data Ingestion Stage started]
+[2025-09-05 20:33:08,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-09-05 20:33:08,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-09-05 20:33:08,424: INFO: common: created directory at: artifacts]
+[2025-09-05 20:33:08,425: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-09-05 20:33:08,425: INFO: data_ingestion: File already exist]
+[2025-09-05 20:33:08,615: INFO: main: Data Ingestion Stage completed]
