@@ -1,7 +1,6 @@
 from src.NLP_text_summarization.constants import *
 from src.NLP_text_summarization.utils.common import read_yaml, creating_directories
-from src.NLP_text_summarization.entity import DataIngestionConfig, DataTransformationConfig
-
+from src.NLP_text_summarization.entity import DataIngestionConfig, DataTransformationConfig, ModelTrainerConfig
 class ConfigurationManager:
     def __init__(self,
                 config_path=CONFIG_FILE_PATH,
@@ -37,3 +36,38 @@ class ConfigurationManager:
             
         )
         return  data_transformation_config
+    
+
+class ConfigurationManager:
+    def __init__(
+        self,
+        config_filepath = CONFIG_FILE_PATH,
+        params_filepath = PARAMS_FILE_PATH):
+
+        self.config = read_yaml(config_filepath)
+        self.params = read_yaml(params_filepath)
+
+        creating_directories([self.config.artifacts_root])
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config=self.config.model_trainer
+        params=self.params.TrainingArguments
+
+        creating_directories([config.root_dir])
+
+        model_trainer_config=ModelTrainerConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            model_ckpt = config.model_ckpt,
+            num_train_epochs = params.num_train_epochs,
+            warmup_steps = params.warmup_steps,
+            per_device_train_batch_size = params.per_device_train_batch_size,
+            weight_decay = params.weight_decay,
+            logging_steps = params.logging_steps,
+            evaluation_strategy = params.evaluation_strategy,
+            eval_steps = params.evaluation_strategy,
+            save_steps = params.save_steps,
+            gradient_accumulation_steps = params.gradient_accumulation_steps
+        )
+        return model_trainer_config
+
